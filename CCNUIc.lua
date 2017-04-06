@@ -307,9 +307,6 @@ function CCNUIc:DrawTree()
 			self.row:DestroyPixie(2)
       self.row:AddPixie(pixieData)
       
-      -- debug
-      Print(AnchorOffsets[2] .. " // " .. AnchorOffsets[4])
-      
       -- Set the row to the precalculated position
 			self.row:SetAnchorOffsets(
 				AnchorOffsets[1],
