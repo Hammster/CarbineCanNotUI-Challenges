@@ -137,7 +137,7 @@ end
 
 -- on SlashCommand "/completer"
 function CCNUIc:OnSlashCCNUIc()
-	Print("Thank you for using CCNUIc 0.0.7")
+	Print("Thank you for using CCNUIc v0.0.8-beta")
 	
 	-- reset the dataContainer content
 	self.wndDataContainer:DestroyChildren();
@@ -329,29 +329,30 @@ end
 
 -- when self.config.timeInterval (default 3) seconds have passed
 function CCNUIc:OnUpdate()
-  
+ 
   -- Optimization to reduce the API calls, we only redraw the list if we really
   -- need to, this mean you are changing XYZ positions, also happening if you
   -- are changing zones.
-	if (self.player) then
-		self.pos = self.player:GetPosition();
+	if (self.player ~= nil) and (self.player:GetPosition() ~= nil) then
+		self.pos    = self.player:GetPosition()
 	else
-		self.player = GameLib.GetPlayerUnit();
-		self.pos = self.player:GetPosition();
+		self.player = GameLib.GetPlayerUnit()
+		-- GetPlayerUnit takes too long, therefore we wait for the next iteration.
 	end
-
+  
 	if (self.pos) then
-		if (self.oldPos == nil) then
+    if (self.oldPos == nil) then
 			self.oldPos = self.pos
 		end
 
 		if (self.oldPos.x ~= self.pos.x) or (self.oldPos.y ~= self.pos.y) or (self.oldPos.z ~= self.pos.z) then
 			self.oldPos = self.pos
-			self.wndDataContainer:DestroyChildren();
-			self.tNodes = {};
+			self.wndDataContainer:DestroyChildren()
+			self.tNodes = {}
 			self:BuildTree()
-			self:DrawTree();
+			self:DrawTree()
 		end
+    
 	end
 end
 
@@ -371,7 +372,10 @@ function CCNUIc:OnBtnReload()
   
   -- stop the timer and reset to initial state
 	self.tUpdateTimer:Stop()
-	self.wndDataContainer:DestroyChildren();
+	
+  -- reload player clea table
+	self.player = GameLib.GetPlayerUnit()
+  self.wndDataContainer:DestroyChildren();
 	self.tNodes = {};
 
 	-- render
