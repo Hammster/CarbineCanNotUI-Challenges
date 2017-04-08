@@ -2,14 +2,14 @@
 <Sprites>
     <!-- Buttons -->
     <Sprite Name="btn_close" Cycle="1">
-        <Frame Texture="CCNUIc\assets\btn_close.png" x0="0" x1="0" x2="0" x3="0" x4="25" x5="25" y0="0" y1="0" y2="0" y3="0" y4="25" y5="25" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+        <Frame Texture="carbine-can-not-ui_challenges\assets\btn_close.png" x0="0" x1="0" x2="0" x3="0" x4="25" x5="25" y0="0" y1="0" y2="0" y3="0" y4="25" y5="25" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
     <Sprite Name="btn_reload" Cycle="1">
-        <Frame Texture="CCNUIc\assets\btn_reload.png" x0="0" x1="0" x2="0" x3="0" x4="25" x5="25" y0="0" y1="0" y2="0" y3="0" y4="25" y5="25" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+        <Frame Texture="carbine-can-not-ui_challenges\assets\btn_reload.png" x0="0" x1="0" x2="0" x3="0" x4="25" x5="25" y0="0" y1="0" y2="0" y3="0" y4="25" y5="25" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
 
     <!-- Handles -->
     <Sprite Name="handle_resize" Cycle="1">
-        <Frame Texture="CCNUIc\assets\handle_resize.png" x0="0" x1="0" x2="0" x3="0" x4="25" x5="25" y0="0" y1="0" y2="0" y3="0" y4="25" y5="25" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
+        <Frame Texture="carbine-can-not-ui_challenges\assets\handle_resize.png" x0="0" x1="0" x2="0" x3="0" x4="25" x5="25" y0="0" y1="0" y2="0" y3="0" y4="25" y5="25" Stretchy="1" HotspotX="0" HotspotY="0" Duration="1.000" StartColor="white" EndColor="white"/>
     </Sprite>
 </Sprites>
