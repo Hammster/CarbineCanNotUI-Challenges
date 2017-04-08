@@ -136,7 +136,7 @@ end
 
 -- on SlashCommand "/completer"
 function CCNUIc:OnSlashCCNUIc()
-  Print("Thank you for using CCNUIc v0.0.8-beta")
+  Print("Thank you for using CCNUIc v0.0.9-beta")
 
   -- reset the dataContainer content
   self.wndDataContainer:DestroyChildren();
