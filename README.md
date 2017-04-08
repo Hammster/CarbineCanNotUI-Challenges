@@ -11,7 +11,7 @@ _Aka CCNUIc_
 It aims to improve the situation that we have with the current implementation of challenges in the ObjectiveTracker Addon, where we have no control on what challenges are displayed and if it has any relevance for the user. Also no more Codex opening to track the starting location.
 
 ## Usage:
-Simply open up the window with __/ccnuic__, 
+Simply open up the window with __/ccnuic__
 
 The challenges in the list are sorted by distance, you can interact with the challenges by clicking on them. If you wish to update the challenge list you can press the reload button in top.
 
